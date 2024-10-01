@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard App</title>
-    <link rel="stylesheet" href="includes/style.css">
+    <title>Flashcard Quiz</title>
+    <link rel="stylesheet" href="includes/styles.css">
 </head>
 <body>
-    <div class="flashcard-container">
-        <div id="flashcard">
-            <h2 id="question">Loading...</h2>
+    <div id="quiz-container">
+        <h1>Flashcard Quiz</h1>
+        <div id="start-container">
+            <button id="start-button">Start Quiz</button>
+        </div>
+        <div id="question-container" style="display: none;">
+            <div id="question"></div>
             <input type="text" id="answer" placeholder="Type your answer here">
             <button id="submit-answer">Submit</button>
-            <p id="feedback"></p>
-            <p id="score">Score: 0</p>  <!-- Add this for displaying the score -->
+            <div id="feedback"></div>
+            <div id="score"></div>
         </div>
     </div>
-    <script src="includes/app.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
