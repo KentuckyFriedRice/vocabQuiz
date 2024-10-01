@@ -16,7 +16,7 @@ fetch('decks/flashcards.json')
 function displayFlashcard() {
     if (currentCardIndex < flashcards.length) {
         document.getElementById('question').innerText = flashcards[currentCardIndex].question;
-        document.getElementById('answer').value = '';
+        document.getElementById('answer').value = '';  // Clear the answer box when displaying a new card
         document.getElementById('feedback').innerText = '';
         document.getElementById('score').innerText = `Score: ${score}`; // Update score display
         hasTriedOnce = false;  // Reset retry flag for each new flashcard
@@ -43,6 +43,9 @@ document.getElementById('answer').addEventListener('keypress', function(event) {
 function checkAnswer() {
     const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
     const correctAnswer = flashcards[currentCardIndex].answer.toLowerCase();
+
+    // Clear the answer box after submission
+    document.getElementById('answer').value = '';  // Clear the input box after checking the answer
 
     if (userAnswer === correctAnswer) {
         document.getElementById('feedback').innerText = 'Correct!';
