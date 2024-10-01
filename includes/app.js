@@ -2,6 +2,7 @@
 let flashcards = [];
 let currentCardIndex = 0;
 let score = 0;  // Initialize score
+let hasTriedOnce = false;  // To track if the user has already tried once
 
 fetch('decks/flashcards.json')
     .then(response => response.json())
@@ -18,6 +19,7 @@ function displayFlashcard() {
         document.getElementById('answer').value = '';
         document.getElementById('feedback').innerText = '';
         document.getElementById('score').innerText = `Score: ${score}`; // Update score display
+        hasTriedOnce = false;  // Reset retry flag for each new flashcard
     } else {
         document.getElementById('question').innerText = 'All done!';
         document.getElementById('answer').style.display = 'none';
@@ -43,10 +45,19 @@ function checkAnswer() {
 
     if (userAnswer === correctAnswer) {
         document.getElementById('feedback').innerText = 'Correct!';
-        score++;  // Increment the score for a correct answer
+        if (!hasTriedOnce) {
+            score++;  // Only increment the score if the user hasn't already retried
+        }
         currentCardIndex++;
-        setTimeout(displayFlashcard, 1000);  // Move to next card after a short delay
+        setTimeout(displayFlashcard, 1000);  // Move to the next card after a short delay
     } else {
-        document.getElementById('feedback').innerText = 'Try again!';
+        if (hasTriedOnce) {
+            document.getElementById('feedback').innerText = 'Wrong again! Moving to the next question.';
+            currentCardIndex++;  // Move to the next question after second attempt
+            setTimeout(displayFlashcard, 1000);  // Move to next card after a short delay
+        } else {
+            document.getElementById('feedback').innerText = 'Wrong! You have one more try.';
+            hasTriedOnce = true;  // Mark that the user has tried once
+        }
     }
 }
