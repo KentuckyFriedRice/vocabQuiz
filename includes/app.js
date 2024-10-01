@@ -3,6 +3,7 @@ let flashcards = [];
 let currentCardIndex = 0;
 let score = 0;  // Initialize score
 let hasTriedOnce = false;  // To track if the user has already tried once
+let missedQuestions = []; // Array to store missed questions
 
 fetch('decks/flashcards.json')
     .then(response => response.json())
@@ -25,8 +26,18 @@ function displayFlashcard() {
         document.getElementById('question').innerText = 'All done!';
         document.getElementById('answer').style.display = 'none';
         document.getElementById('submit-answer').style.display = 'none';
+
+        // Prepare missed questions for display
+        if (missedQuestions.length > 0) {
+            const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
+            document.getElementById('feedback').innerHTML = `
+                Your final score is: ${score} out of ${flashcards.length}<br><br>
+                Missed Questions:<ul>${missedList}</ul>`;
+        } else {
+            document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
+        }
+        //document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
         document.getElementById('score').style.display = 'none';
-        document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}`;
     }
 }
 
@@ -63,9 +74,7 @@ function checkAnswer() {
         if (currentCardIndex === flashcards.length - 1) {
             document.getElementById('score').innerText = `Score: ${score}`;  // Display updated score before showing final message
             setTimeout(() => {
-                document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}`;
-                document.getElementById('answer').style.display = 'none';
-                document.getElementById('submit-answer').style.display = 'none';
+                displayFlashcard(); // Call displayFlashcard to show final results
             }, 1000);  // Short delay before showing final result
         } else {
             currentCardIndex++;
@@ -74,13 +83,16 @@ function checkAnswer() {
     } else {
         if (hasTriedOnce) {
             document.getElementById('feedback').innerText = 'Wrong again! Moving to the next question.';
-            
+            // Add missed question to the array
+            missedQuestions.push({
+                question: flashcards[currentCardIndex].question,
+                answer: flashcards[currentCardIndex].answer
+            });
+
             // If it's the last question, display the final result
             if (currentCardIndex === flashcards.length - 1) {
                 setTimeout(() => {
-                    document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}`;
-                    document.getElementById('answer').style.display = 'none';
-                    document.getElementById('submit-answer').style.display = 'none';
+                    displayFlashcard(); // Call displayFlashcard to show final results
                 }, 1000);  // Display final result if it's the last question
             } else {
                 currentCardIndex++;  // Move to the next question after second attempt
