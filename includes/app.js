@@ -64,6 +64,12 @@ function confirmDecks() {
 
 // Function to start the quiz
 function startQuiz() {
+    // Check if any deck has been selected
+    if (selectedDecks.length === 0) {
+        alert("Please select at least one deck before starting the quiz!"); // Alert the user
+        return; // Prevent further execution if no decks are selected
+    }
+
     // Hide start button and show question container
     document.getElementById('start-container').style.display = 'none';
     document.getElementById('question-container').style.display = 'block';
