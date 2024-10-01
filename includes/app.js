@@ -22,7 +22,7 @@ function displayFlashcard() {
         document.getElementById('score').innerText = `Score: ${score}`; // Update score display
         hasTriedOnce = false;  // Reset retry flag for each new flashcard
     } else {
-        // Display the final results
+        // Display the final results if no more flashcards
         showFinalResults();
     }
 }
@@ -77,6 +77,7 @@ function checkAnswer() {
         // Move to the next question or display results if it's the final flashcard
         currentCardIndex++;
         setTimeout(() => {
+            // Check if we have more flashcards
             if (currentCardIndex < flashcards.length) {
                 displayFlashcard();  // Call to show the next flashcard
             } else {
@@ -94,6 +95,7 @@ function checkAnswer() {
             // Move to the next question
             currentCardIndex++; 
             setTimeout(() => {
+                // Check if we have more flashcards after the second attempt
                 if (currentCardIndex < flashcards.length) {
                     displayFlashcard();  // Call to show the next flashcard
                 } else {
