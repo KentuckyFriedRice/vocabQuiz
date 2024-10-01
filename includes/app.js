@@ -3,7 +3,7 @@ let flashcards = [];
 let currentCardIndex = 0;
 let score = 0;  // Initialize score
 
-fetch('flashcards.json')
+fetch('decks/flashcards.json')
     .then(response => response.json())
     .then(data => {
         flashcards = data;
