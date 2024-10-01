@@ -38,7 +38,7 @@ function showFinalResults() {
         const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
         document.getElementById('feedback').innerHTML = `
             Your final score is: ${score} out of ${flashcards.length}<br><br>
-            Missed Questions:<ul>${missedList}</ul>`;
+            Missed Questions:<ol>${missedList}</ol>`;
     } else {
         document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
     }
