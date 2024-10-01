@@ -21,9 +21,12 @@ document.getElementById('decks-button').addEventListener('click', showDecks);
 
 // Function to display the decks for selection
 function showDecks() {
+    // Hide the start container and show the decks container
     document.getElementById('start-container').style.display = 'none';
     const checkboxList = document.getElementById('checkbox-list');
     checkboxList.innerHTML = ''; // Clear previous checkboxes
+
+    // Create checkboxes for each available deck
     availableDecks.forEach(deck => {
         const label = document.createElement('label');
         const checkbox = document.createElement('input');
@@ -35,6 +38,8 @@ function showDecks() {
         checkboxList.appendChild(label);
         checkboxList.appendChild(document.createElement('br'));
     });
+
+    // Show the decks container
     document.getElementById('decks-container').style.display = 'block';
 }
 
@@ -145,9 +150,6 @@ function checkAnswer() {
         // Increment the score for the first attempt or the second attempt if it's correct
         if (!hasTriedOnce) {
             score++;  // Increment score only if the user hasn't already retried
-        } else {
-            // If it's correct on the retry, increment the score
-            score++;
         }
 
         // Move to the next question or display results if it's the final flashcard
@@ -168,6 +170,15 @@ function checkAnswer() {
                 question: flashcards[currentCardIndex].question,
                 answer: flashcards[currentCardIndex].answer
             });
-            // Move to the next question
-            currentCardIndex++; 
-            setTimeout
+        } else {
+            document.getElementById('feedback').innerText = 'Incorrect! Try again.';
+            hasTriedOnce = true;  // Set the flag that the user has tried once
+            return;  // Stop the function to give the user a chance to retry
+        }
+        // Move to the next question
+        currentCardIndex++; 
+        setTimeout(() => {
+            displayFlashcard();  // Show the next flashcard
+        }, 1000);  // Short delay before showing next card
+    }
+}
