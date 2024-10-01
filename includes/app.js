@@ -42,7 +42,7 @@ function showFinalResults() {
     } else {
         document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
     }
-    document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
+    document.getElementById('score').style.display = 'none'; // Hide score counter
 }
 
 // Event listener for the submit button
