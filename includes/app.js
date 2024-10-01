@@ -25,6 +25,7 @@ function displayFlashcard() {
         document.getElementById('question').innerText = 'All done!';
         document.getElementById('answer').style.display = 'none';
         document.getElementById('submit-answer').style.display = 'none';
+        document.getElementById('score').style.display = 'none';
         document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}`;
     }
 }
