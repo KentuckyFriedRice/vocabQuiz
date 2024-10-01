@@ -9,9 +9,25 @@ fetch('decks/flashcards.json')
     .then(response => response.json())
     .then(data => {
         flashcards = data;
-        displayFlashcard();
+        document.getElementById('start-button').addEventListener('click', startQuiz);
     })
     .catch(error => console.error('Error loading flashcards:', error));
+
+// Function to start the quiz
+function startQuiz() {
+    // Hide start button and show question container
+    document.getElementById('start-container').style.display = 'none';
+    document.getElementById('question-container').style.display = 'block';
+
+    // Reset the quiz variables
+    currentCardIndex = 0;
+    score = 0;
+    hasTriedOnce = false;
+    missedQuestions = [];
+
+    // Display the first flashcard
+    displayFlashcard();
+}
 
 // Function to display the current flashcard
 function displayFlashcard() {
@@ -22,7 +38,7 @@ function displayFlashcard() {
         document.getElementById('score').innerText = `Score: ${score}`; // Update score display
         hasTriedOnce = false;  // Reset retry flag for each new flashcard
     } else {
-        // Display the final results if no more flashcards
+        // Display the final results
         showFinalResults();
     }
 }
@@ -38,11 +54,11 @@ function showFinalResults() {
         const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
         document.getElementById('feedback').innerHTML = `
             Your final score is: ${score} out of ${flashcards.length}<br><br>
-            Missed Questions:<ol>${missedList}</ol>`;
+            Missed Questions:<ul>${missedList}</ul>`;
     } else {
         document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
     }
-    document.getElementById('score').style.display = 'none'; // Hide score counter
+    document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
 }
 
 // Event listener for the submit button
