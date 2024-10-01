@@ -23,22 +23,26 @@ function displayFlashcard() {
         hasTriedOnce = false;  // Reset retry flag for each new flashcard
     } else {
         // Display the final results
-        document.getElementById('question').innerText = 'All done!';
-        document.getElementById('answer').style.display = 'none';
-        document.getElementById('submit-answer').style.display = 'none';
-
-        // Prepare missed questions for display
-        if (missedQuestions.length > 0) {
-            const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
-            document.getElementById('feedback').innerHTML = `
-                Your final score is: ${score} out of ${flashcards.length}<br><br>
-                Missed Questions:<ul>${missedList}</ul>`;
-        } else {
-            document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
-        }
-        //document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
-        document.getElementById('score').style.display = 'none';
+        showFinalResults();
     }
+}
+
+// Function to show the final results
+function showFinalResults() {
+    document.getElementById('question').innerText = 'All done!';
+    document.getElementById('answer').style.display = 'none';
+    document.getElementById('submit-answer').style.display = 'none';
+
+    // Prepare missed questions for display
+    if (missedQuestions.length > 0) {
+        const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
+        document.getElementById('feedback').innerHTML = `
+            Your final score is: ${score} out of ${flashcards.length}<br><br>
+            Missed Questions:<ul>${missedList}</ul>`;
+    } else {
+        document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
+    }
+    document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
 }
 
 // Event listener for the submit button
@@ -70,16 +74,15 @@ function checkAnswer() {
             score++;
         }
 
-        // If it's the final flashcard, update score and move to final results
-        if (currentCardIndex === flashcards.length - 1) {
-            document.getElementById('score').innerText = `Score: ${score}`;  // Display updated score before showing final message
-            setTimeout(() => {
-                displayFlashcard(); // Call displayFlashcard to show final results
-            }, 1000);  // Short delay before showing final result
-        } else {
-            currentCardIndex++;
-            setTimeout(displayFlashcard, 1000);  // Move to the next card after a short delay
-        }
+        // Move to the next question or display results if it's the final flashcard
+        currentCardIndex++;
+        setTimeout(() => {
+            if (currentCardIndex < flashcards.length) {
+                displayFlashcard();  // Call to show the next flashcard
+            } else {
+                showFinalResults();  // Call to show final results
+            }
+        }, 1000);  // Short delay before showing next card
     } else {
         if (hasTriedOnce) {
             document.getElementById('feedback').innerText = 'Wrong again! Moving to the next question.';
@@ -88,16 +91,15 @@ function checkAnswer() {
                 question: flashcards[currentCardIndex].question,
                 answer: flashcards[currentCardIndex].answer
             });
-
-            // If it's the last question, display the final result
-            if (currentCardIndex === flashcards.length - 1) {
-                setTimeout(() => {
-                    displayFlashcard(); // Call displayFlashcard to show final results
-                }, 1000);  // Display final result if it's the last question
-            } else {
-                currentCardIndex++;  // Move to the next question after second attempt
-                setTimeout(displayFlashcard, 1000);  // Move to next card after a short delay
-            }
+            // Move to the next question
+            currentCardIndex++; 
+            setTimeout(() => {
+                if (currentCardIndex < flashcards.length) {
+                    displayFlashcard();  // Call to show the next flashcard
+                } else {
+                    showFinalResults();  // Call to show final results
+                }
+            }, 1000);  // Short delay before showing next card
         } else {
             document.getElementById('feedback').innerText = 'Wrong! You have one more try.';
             hasTriedOnce = true;  // Mark that the user has tried once
