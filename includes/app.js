@@ -4,14 +4,58 @@ let currentCardIndex = 0;
 let score = 0;  // Initialize score
 let hasTriedOnce = false;  // To track if the user has already tried once
 let missedQuestions = []; // Array to store missed questions
+let selectedDecks = []; // Array to store selected deck names
 
-fetch('decks/flashcards.json')
-    .then(response => response.json())
-    .then(data => {
-        flashcards = data;
-        document.getElementById('start-button').addEventListener('click', startQuiz);
-    })
-    .catch(error => console.error('Error loading flashcards:', error));
+// Sample JSON files (you should replace these with your actual JSON files)
+const availableDecks = [
+    { name: 'Deck 1', file: 'decks/deck1.json' },
+    { name: 'Deck 2', file: 'decks/deck2.json' },
+    { name: 'Deck 3', file: 'decks/deck3.json' }
+];
+
+// Event listener for the start button
+document.getElementById('start-button').addEventListener('click', startQuiz);
+
+// Event listener for the decks button
+document.getElementById('decks-button').addEventListener('click', showDecks);
+
+// Function to display the decks for selection
+function showDecks() {
+    document.getElementById('start-container').style.display = 'none';
+    const checkboxList = document.getElementById('checkbox-list');
+    checkboxList.innerHTML = ''; // Clear previous checkboxes
+    availableDecks.forEach(deck => {
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.value = deck.file; // Use file path as value
+        checkbox.name = deck.name; // Use deck name for identification
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(deck.name));
+        checkboxList.appendChild(label);
+        checkboxList.appendChild(document.createElement('br'));
+    });
+    document.getElementById('decks-container').style.display = 'block';
+}
+
+// Event listener for confirming deck selection
+document.getElementById('confirm-decks-button').addEventListener('click', confirmDecks);
+
+// Function to confirm selected decks and start the quiz
+function confirmDecks() {
+    const checkboxes = document.querySelectorAll('#checkbox-list input[type="checkbox"]');
+    selectedDecks = []; // Reset selected decks
+
+    checkboxes.forEach(checkbox => {
+        if (checkbox.checked) {
+            selectedDecks.push(checkbox.value); // Store selected deck file paths
+        }
+    });
+
+    // Hide decks container and show start button
+    document.getElementById('decks-container').style.display = 'none';
+    document.getElementById('start-container').style.display = 'block';
+}
 
 // Function to start the quiz
 function startQuiz() {
@@ -25,8 +69,24 @@ function startQuiz() {
     hasTriedOnce = false;
     missedQuestions = [];
 
-    // Display the first flashcard
-    displayFlashcard();
+    // Load the selected decks
+    loadDecks();
+}
+
+// Function to load flashcards from selected decks
+function loadDecks() {
+    if (selectedDecks.length === 0) {
+        alert("Please select at least one deck!");
+        return; // No decks selected
+    }
+
+    // Load flashcards from each selected deck
+    let promises = selectedDecks.map(deck => fetch(deck).then(response => response.json()));
+    
+    Promise.all(promises).then(deckDataArray => {
+        flashcards = [].concat(...deckDataArray); // Merge all flashcards into one array
+        displayFlashcard(); // Display the first flashcard
+    }).catch(error => console.error('Error loading flashcards:', error));
 }
 
 // Function to display the current flashcard
@@ -110,17 +170,4 @@ function checkAnswer() {
             });
             // Move to the next question
             currentCardIndex++; 
-            setTimeout(() => {
-                // Check if we have more flashcards after the second attempt
-                if (currentCardIndex < flashcards.length) {
-                    displayFlashcard();  // Call to show the next flashcard
-                } else {
-                    showFinalResults();  // Call to show final results
-                }
-            }, 1000);  // Short delay before showing next card
-        } else {
-            document.getElementById('feedback').innerText = 'Wrong! You have one more try.';
-            hasTriedOnce = true;  // Mark that the user has tried once
-        }
-    }
-}
+            setTimeout
