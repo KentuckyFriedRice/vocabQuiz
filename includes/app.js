@@ -155,8 +155,8 @@ document.getElementById('answer').addEventListener('keypress', function(event) {
 
 // Function to check the answer
 function checkAnswer() {
-    const userAnswer = document.getElementById('answer').value.trim().toLowerCase();
-    const correctAnswer = flashcards[currentCardIndex].answer.toLowerCase();
+    const userAnswer = document.getElementById('answer').value.trim();
+    const correctAnswer = flashcards[currentCardIndex].answer;
 
     // Clear the answer box after submission
     document.getElementById('answer').value = '';  // Clear the input box after checking the answer
