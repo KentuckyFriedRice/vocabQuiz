@@ -232,10 +232,10 @@ window.onload = function() {
     }
     
     // If you want to pre-check the checkboxes based on saved decks:
-    const checkboxes = document.querySelectorAll('#checkbox-list input[type="checkbox"]');
-    checkboxes.forEach(checkbox => {
-        if (selectedDecks.includes(checkbox.value)) {
-            checkbox.checked = true;
-        }
-    });
+    //const checkboxes = document.querySelectorAll('#checkbox-list input[type="checkbox"]');
+    //checkboxes.forEach(checkbox => {
+     //   if (selectedDecks.includes(checkbox.value)) {
+    //        checkbox.checked = true;
+    //    }
+   // });
 };
