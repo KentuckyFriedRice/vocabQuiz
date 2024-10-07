@@ -63,6 +63,8 @@ function confirmDecks() {
     // Hide decks container and show start button
     document.getElementById('decks-container').style.display = 'none';
     document.getElementById('start-container').style.display = 'block';
+
+    loadDecks();
 }
 
 
@@ -85,7 +87,7 @@ function startQuiz() {
     missedQuestions = [];
 
     // Load the selected decks
-    loadDecks();
+    //loadDecks();
 }
 
 // Function to load flashcards from selected decks
