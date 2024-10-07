@@ -37,9 +37,6 @@ function showDecks() {
         label.appendChild(document.createTextNode(deck.name));
         checkboxList.appendChild(label);
         checkboxList.appendChild(document.createElement('br'));
-    });
-
-    checkboxList.forEach(checkbox => {
         if (selectedDecks.includes(checkbox.value)) {
             checkbox.checked = true;
         }
