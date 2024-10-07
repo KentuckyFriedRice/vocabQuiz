@@ -65,6 +65,7 @@ function confirmDecks() {
     document.getElementById('start-container').style.display = 'block';
 
     loadDecks();
+    console.log("loaded decks");
 }
 
 
