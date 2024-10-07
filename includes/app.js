@@ -39,6 +39,12 @@ function showDecks() {
         checkboxList.appendChild(document.createElement('br'));
     });
 
+    checkboxes.forEach(checkbox => {
+        if (selectedDecks.includes(checkbox.value)) {
+            checkbox.checked = true;
+        }
+    });
+
     // Show the decks container
     document.getElementById('decks-container').style.display = 'block';
 }
