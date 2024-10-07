@@ -116,22 +116,20 @@ function displayFlashcard() {
 
 // Function to show the final results
 function showFinalResults() {
-    document.getElementById('question').innerText = 'All done!';
-    document.getElementById('answer').style.display = 'none';
-    document.getElementById('submit-answer').style.display = 'none';
-    document.getElementById('restart').style.display = 'inline';
+    document.getElementById('question-container').style.display = 'none';
+    document.getElementById('results-container').style.display = 'block';
 
-    // Prepare missed questions for display
+    document.getElementById('final-score').innerText = `Your final score is: ${score} out of ${flashcards.length}`;
+
     if (missedQuestions.length > 0) {
         const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
-        document.getElementById('feedback').innerHTML = `
-            Your final score is: ${score} out of ${flashcards.length}<br><br>
-            Missed Questions:<ul>${missedList}</ul>`;
+        document.getElementById('missed-questions').innerHTML = `Missed Questions:<ul>${missedList}</ul>`;
     } else {
-        document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
+        document.getElementById('missed-questions').innerText = "Great job! You got everything correct!";
     }
     document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
 }
+
 
 // Event listener for the submit button
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
