@@ -39,7 +39,7 @@ function showDecks() {
         checkboxList.appendChild(document.createElement('br'));
     });
 
-    checkboxes.forEach(checkbox => {
+    checkboxList.forEach(checkbox => {
         if (selectedDecks.includes(checkbox.value)) {
             checkbox.checked = true;
         }
