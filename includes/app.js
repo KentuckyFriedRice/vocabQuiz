@@ -57,10 +57,14 @@ function confirmDecks() {
         }
     });
 
+    // Save the selected decks to Local Storage
+    localStorage.setItem('selectedDecks', JSON.stringify(selectedDecks));
+
     // Hide decks container and show start button
     document.getElementById('decks-container').style.display = 'none';
     document.getElementById('start-container').style.display = 'block';
 }
+
 
 // Function to start the quiz
 function startQuiz() {
@@ -209,3 +213,23 @@ function restartQuiz() {
     document.getElementById('start-container').style.display = 'block';
 }
 
+window.onload = function() {
+    // Load saved selected decks from Local Storage
+    const savedDecks = JSON.parse(localStorage.getItem('selectedDecks'));
+    
+    if (savedDecks && savedDecks.length > 0) {
+        selectedDecks = savedDecks;
+        console.log('Loaded saved decks:', selectedDecks);
+        // Optionally, you can display these as pre-selected or auto-load them
+        // If you want them automatically loaded, uncomment below:
+        // loadDecks();
+    }
+    
+    // If you want to pre-check the checkboxes based on saved decks:
+    const checkboxes = document.querySelectorAll('#checkbox-list input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        if (selectedDecks.includes(checkbox.value)) {
+            checkbox.checked = true;
+        }
+    });
+};
