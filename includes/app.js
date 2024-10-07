@@ -119,6 +119,7 @@ function showFinalResults() {
     document.getElementById('question').innerText = 'All done!';
     document.getElementById('answer').style.display = 'none';
     document.getElementById('submit-answer').style.display = 'none';
+    document.getElementById('restart').style.display = 'inline';
 
     // Prepare missed questions for display
     if (missedQuestions.length > 0) {
@@ -188,3 +189,23 @@ function checkAnswer() {
         }, 1000);  // Short delay before showing next card
     }
 }
+
+// Function to reset variables and show the start screen again.
+function restartQuiz() {
+    // Reset all variables to their initial states
+    flashcards = [];
+    currentCardIndex = 0;
+    score = 0;
+    hasTriedOnce = false;
+    missedQuestions = [];
+    selectedDecks = [];
+
+    // Clear any results content
+    document.getElementById('final-score').innerText = '';
+    document.getElementById('missed-questions').innerHTML = '';
+
+    // Hide the results container and show the start container
+    document.getElementById('results-container').style.display = 'none';
+    document.getElementById('start-container').style.display = 'block';
+}
+
