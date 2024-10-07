@@ -116,20 +116,22 @@ function displayFlashcard() {
 
 // Function to show the final results
 function showFinalResults() {
-    document.getElementById('question-container').style.display = 'none';
-    document.getElementById('results-container').style.display = 'block';
+    document.getElementById('question').innerText = 'All done!';
+    document.getElementById('answer').style.display = 'none';
+    document.getElementById('submit-answer').style.display = 'none';
+    document.getElementById('restart').style.display = 'inline';
 
-    document.getElementById('final-score').innerText = `Your final score is: ${score} out of ${flashcards.length}`;
-
+    // Prepare missed questions for display
     if (missedQuestions.length > 0) {
         const missedList = missedQuestions.map(q => `<li>${q.question} (Correct Answer: ${q.answer})</li>`).join('');
-        document.getElementById('missed-questions').innerHTML = `Missed Questions:<ul>${missedList}</ul>`;
+        document.getElementById('feedback').innerHTML = `
+            Your final score is: ${score} out of ${flashcards.length}<br><br>
+            Missed Questions:<ul>${missedList}</ul>`;
     } else {
-        document.getElementById('missed-questions').innerText = "Great job! You got everything correct!";
+        document.getElementById('feedback').innerText = `Your final score is: ${score} out of ${flashcards.length}. Great job!`;
     }
     document.getElementById('score').innerText = `Final Score: ${score}`; // Display final score at the end
 }
-
 
 // Event listener for the submit button
 document.getElementById('submit-answer').addEventListener('click', checkAnswer);
@@ -196,6 +198,7 @@ function restartQuiz() {
     score = 0;
     hasTriedOnce = false;
     missedQuestions = [];
+    selectedDecks = [];
 
     // Clear any results content
     document.getElementById('final-score').innerText = '';
@@ -203,9 +206,6 @@ function restartQuiz() {
 
     // Hide the results container and show the start container
     document.getElementById('results-container').style.display = 'none';
-    document.getElementById('question-container').style.display = 'none';
     document.getElementById('start-container').style.display = 'block';
-    document.getElementById('decks-container').style.display = 'none';
 }
-
 
