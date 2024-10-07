@@ -198,7 +198,6 @@ function restartQuiz() {
     score = 0;
     hasTriedOnce = false;
     missedQuestions = [];
-    selectedDecks = [];
 
     // Clear any results content
     document.getElementById('final-score').innerText = '';
@@ -206,6 +205,9 @@ function restartQuiz() {
 
     // Hide the results container and show the start container
     document.getElementById('results-container').style.display = 'none';
+    document.getElementById('question-container').style.display = 'none';
     document.getElementById('start-container').style.display = 'block';
+    document.getElementById('decks-container').style.display = 'none';
 }
+
 
