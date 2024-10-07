@@ -226,9 +226,8 @@ window.onload = function() {
     if (savedDecks && savedDecks.length > 0) {
         selectedDecks = savedDecks;
         console.log('Loaded saved decks:', selectedDecks);
-        // Optionally, you can display these as pre-selected or auto-load them
-        // If you want them automatically loaded, uncomment below:
-        // loadDecks();
+        loadDecks();
+        console.log("loaded decks");
     }
     
     // If you want to pre-check the checkboxes based on saved decks:
