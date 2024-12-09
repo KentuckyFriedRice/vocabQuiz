@@ -183,13 +183,13 @@ function checkAnswer() {
         if (hasTriedOnce) {
             document.getElementById('feedback').innerText = 'Wrong again! Moving to the next question.';
             // Add missed question to the array
+        } else {
+            document.getElementById('feedback').innerText = 'Incorrect! Try again.';
+            hasTriedOnce = true;  // Set the flag that the user has tried once
             missedQuestions.push({
                 question: flashcards[currentCardIndex].question,
                 answer: flashcards[currentCardIndex].answer
             });
-        } else {
-            document.getElementById('feedback').innerText = 'Incorrect! Try again.';
-            hasTriedOnce = true;  // Set the flag that the user has tried once
             return;  // Stop the function to give the user a chance to retry
         }
         // Move to the next question
