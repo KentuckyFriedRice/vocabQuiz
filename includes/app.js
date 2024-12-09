@@ -8,9 +8,9 @@ let selectedDecks = []; // Array to store selected deck names
 
 // Sample JSON files (you should replace these with your actual JSON files)
 const availableDecks = [
-    { name: 'Example', file: 'decks/flashcards.json' },
-    { name: 'Deck 2', file: 'decks/deck2.json' },
-    { name: 'Deck 3', file: 'decks/deck3.json' }
+    { name: 'Example', file: 'decks/sample.json' },
+    { name: '2年 Winter', file: 'decks/winter2024.json' },
+    //{ name: 'Deck 3', file: 'decks/deck3.json' }
 ];
 
 // Event listener for the start button
