@@ -1,0 +1,402 @@
+[
+    {
+        "question": "像",
+        "answer": "statue"
+    },
+    {
+        "question": "自由",
+        "answer": "liberty"
+    },
+    {
+        "question": "冗談を言う",
+        "answer": "kid"
+    },
+    {
+        "question": "本気の, 真剣な",
+        "answer": "serious"
+    },
+    {
+        "question": "フライト",
+        "answer": "flight"
+    },
+    {
+        "question": "~を終える",
+        "answer": "finish"
+    },
+    {
+        "question": "荷造りをする",
+        "answer": "pack"
+    },
+    {
+        "question": "~だろう",
+        "answer": "will"
+    },
+    {
+        "question": "到着する",
+        "answer": "arrive"
+    },
+    {
+        "question": "空港",
+        "answer": "airport"
+    },
+    {
+        "question": "~を忘れる",
+        "answer": "forget"
+    },
+    {
+        "question": "サングラス",
+        "answer": "sunglasses"
+    },
+    {
+        "question": "~によろしくと言う",
+        "answer": "say hi to ~"
+    },
+    {
+        "question": "じゃあ, またね",
+        "answer": "take care."
+    },
+    {
+        "question": "we willの短縮形",
+        "answer": "we'll"
+    },
+    {
+        "question": "天気, 天候",
+        "answer": "weather"
+    },
+    {
+        "question": "雲",
+        "answer": "cloud"
+    },
+    {
+        "question": "冷静な",
+        "answer": "calm"
+    },
+    {
+        "question": "雨の",
+        "answer": "rainy"
+    },
+    {
+        "question": "雪の",
+        "answer": "snowy"
+    },
+    {
+        "question": "台風",
+        "answer": "typhoon"
+    },
+    {
+        "question": "風の強い",
+        "answer": "windy"
+    },
+    {
+        "question": "予報",
+        "answer": "forecast"
+    },
+    {
+        "question": "will notの短縮形",
+        "answer": "won't"
+    },
+    {
+        "question": "乗客",
+        "answer": "passenger"
+    },
+    {
+        "question": "乗り込む",
+        "answer": "board"
+    },
+    {
+        "question": "~になる",
+        "answer": "become"
+    },
+    {
+        "question": "~に信じる",
+        "answer": "believe"
+    },
+    {
+        "question": "スーツケース",
+        "answer": "suitcase"
+    },
+    {
+        "question": "もし~ならば",
+        "answer": "if"
+    },
+    {
+        "question": "車で行く",
+        "answer": "drive"
+    },
+    {
+        "question": "まっすぐに",
+        "answer": "straight"
+    },
+    {
+        "question": "ピザ",
+        "answer": "pizza"
+    },
+    {
+        "question": "非常に空腹な",
+        "answer": "starving"
+    },
+    {
+        "question": "~を買いに行く",
+        "answer": "go for ~"
+    },
+    {
+        "question": "~の中へ",
+        "answer": "into"
+    },
+    {
+        "question": "I willの短縮形",
+        "answer": "I'll"
+    },
+    {
+        "question": "中央にある",
+        "answer": "central"
+    },
+    {
+        "question": "劇場",
+        "answer": "theater"
+    },
+    {
+        "question": "役に立つ",
+        "answer": "useful"
+    },
+    {
+        "question": "ツアー, 見学",
+        "answer": "tour"
+    },
+    {
+        "question": "都市, 都会",
+        "answer": "city"
+    },
+    {
+        "question": "島",
+        "answer": "island"
+    },
+    {
+        "question": "フェリー, 連絡船",
+        "answer": "ferry"
+    },
+    {
+        "question": "砲台",
+        "answer": "battery"
+    },
+    {
+        "question": "~を確かめる",
+        "answer": "check"
+    },
+    {
+        "question": "計画を立てる",
+        "answer": "make a plan"
+    },
+    {
+        "question": "~を用意する",
+        "answer": "prepare"
+    },
+    {
+        "question": "身長・高さが~ある",
+        "answer": "tall"
+    },
+    {
+        "question": "トン (重さの単位)",
+        "answer": "ton"
+    },
+    {
+        "question": "重さ, 重量",
+        "answer": "weight"
+    },
+    {
+        "question": "~をしっかり持っている",
+        "answer": "hold"
+    },
+    {
+        "question": "手",
+        "answer": "hand"
+    },
+    {
+        "question": "たいまつ",
+        "answer": "torch"
+    },
+    {
+        "question": "過去, 昔",
+        "answer": "past"
+    },
+    {
+        "question": "~を誘導する",
+        "answer": "guide"
+    },
+    {
+        "question": "船",
+        "answer": "ship"
+    },
+    {
+        "question": "パンフレット",
+        "answer": "leaflet"
+    },
+    {
+        "question": "歴史",
+        "answer": "history"
+    },
+    {
+        "question": "過去に",
+        "answer": "in the past"
+    },
+    {
+        "question": "旗",
+        "answer": "flag"
+    },
+    {
+        "question": "マグカップ",
+        "answer": "mug"
+    },
+    {
+        "question": "ステッカー",
+        "answer": "sticker"
+    },
+    {
+        "question": "いつでも, いつも",
+        "answer": "anytime"
+    },
+    {
+        "question": "何か",
+        "answer": "something"
+    },
+    {
+        "question": "帰る, 戻る",
+        "answer": "come back"
+    },
+    {
+        "question": "カフェ",
+        "answer": "cafe"
+    },
+    {
+        "question": "市場",
+        "answer": "market"
+    },
+    {
+        "question": "書店, 本屋",
+        "answer": "bookstore"
+    },
+    {
+        "question": "運動",
+        "answer": "exercise"
+    },
+    {
+        "question": "地震",
+        "answer": "earthquake"
+    },
+    {
+        "question": "訓練",
+        "answer": "drill"
+    },
+    {
+        "question": "安全",
+        "answer": "safety"
+    },
+    {
+        "question": "行動",
+        "answer": "action"
+    },
+    {
+        "question": "~を学ぶ",
+        "answer": "learn"
+    },
+    {
+        "question": "集団, グループ",
+        "answer": "group"
+    },
+    {
+        "question": "議論, 討議",
+        "answer": "discussion"
+    },
+    {
+        "question": "下へ [に]",
+        "answer": "down"
+    },
+    {
+        "question": "揺れる, 振動する",
+        "answer": "shake"
+    },
+    {
+        "question": "かがむ, 伏せる",
+        "answer": "get down"
+    },
+    {
+        "question": "郵便, 郵便物",
+        "answer": "post"
+    },
+    {
+        "question": "~すべきである",
+        "answer": "should"
+    },
+    {
+        "question": "浴室, トイレ",
+        "answer": "bathroom"
+    },
+    {
+        "question": "~を閉じる, 閉める",
+        "answer": "close"
+    },
+    {
+        "question": "ドア, 戸, 扉",
+        "answer": "door"
+    },
+    {
+        "question": "静かに, そっと",
+        "answer": "quietly"
+    },
+    {
+        "question": "~にアイロンをかける",
+        "answer": "iron"
+    },
+    {
+        "question": "~を守る, 保護する",
+        "answer": "protect"
+    },
+    {
+        "question": "(さっと) 体を低くする",
+        "answer": "drop"
+    },
+    {
+        "question": "~を覆う",
+        "answer": "cover"
+    },
+    {
+        "question": "無事な, 無傷な",
+        "answer": "safe"
+    },
+    {
+        "question": "ひざ",
+        "answer": "knee"
+    },
+    {
+        "question": "壁",
+        "answer": "wall"
+    },
+    {
+        "question": "頭",
+        "answer": "head"
+    },
+    {
+        "question": "首",
+        "answer": "neck"
+    },
+    {
+        "question": "両方の",
+        "answer": "both"
+    },
+    {
+        "question": "腕",
+        "answer": "arm"
+    },
+    {
+        "question": "すぐに, 即座に",
+        "answer": "quickly"
+    },
+    {
+        "question": "押す",
+        "answer": "push"
+    },
+    {
+        "question": "~しなければならない",
+        "answer": "must"
+    }
+]
