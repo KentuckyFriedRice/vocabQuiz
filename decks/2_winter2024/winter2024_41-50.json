@@ -1,0 +1,42 @@
+[
+    {
+        "question": "ツアー, 見学",
+        "answer": "tour"
+    },
+    {
+        "question": "都市, 都会",
+        "answer": "city"
+    },
+    {
+        "question": "島",
+        "answer": "island"
+    },
+    {
+        "question": "フェリー, 連絡船",
+        "answer": "ferry"
+    },
+    {
+        "question": "砲台",
+        "answer": "battery"
+    },
+    {
+        "question": "~を確かめる",
+        "answer": "check"
+    },
+    {
+        "question": "計画を立てる",
+        "answer": "make a plan"
+    },
+    {
+        "question": "~を用意する",
+        "answer": "prepare"
+    },
+    {
+        "question": "身長・高さが~ある",
+        "answer": "tall"
+    },
+    {
+        "question": "トン (重さの単位)",
+        "answer": "ton"
+    }
+]

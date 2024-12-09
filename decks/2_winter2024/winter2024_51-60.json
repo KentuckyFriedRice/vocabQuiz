@@ -1,0 +1,42 @@
+[
+    {
+        "question": "重さ, 重量",
+        "answer": "weight"
+    },
+    {
+        "question": "~をしっかり持っている",
+        "answer": "hold"
+    },
+    {
+        "question": "手",
+        "answer": "hand"
+    },
+    {
+        "question": "たいまつ",
+        "answer": "torch"
+    },
+    {
+        "question": "過去, 昔",
+        "answer": "past"
+    },
+    {
+        "question": "~を誘導する",
+        "answer": "guide"
+    },
+    {
+        "question": "船",
+        "answer": "ship"
+    },
+    {
+        "question": "パンフレット",
+        "answer": "leaflet"
+    },
+    {
+        "question": "歴史",
+        "answer": "history"
+    },
+    {
+        "question": "過去に",
+        "answer": "in the past"
+    }
+]

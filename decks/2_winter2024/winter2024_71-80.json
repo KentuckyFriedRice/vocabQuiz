@@ -1,0 +1,42 @@
+[
+    {
+        "question": "地震",
+        "answer": "earthquake"
+    },
+    {
+        "question": "訓練",
+        "answer": "drill"
+    },
+    {
+        "question": "安全",
+        "answer": "safety"
+    },
+    {
+        "question": "行動",
+        "answer": "action"
+    },
+    {
+        "question": "~を学ぶ",
+        "answer": "learn"
+    },
+    {
+        "question": "集団, グループ",
+        "answer": "group"
+    },
+    {
+        "question": "議論, 討議",
+        "answer": "discussion"
+    },
+    {
+        "question": "下へ [に]",
+        "answer": "down"
+    },
+    {
+        "question": "揺れる, 振動する",
+        "answer": "shake"
+    },
+    {
+        "question": "かがむ, 伏せる",
+        "answer": "get down"
+    }
+]

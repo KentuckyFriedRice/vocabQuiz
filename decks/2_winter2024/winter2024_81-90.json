@@ -1,0 +1,42 @@
+[
+    {
+        "question": "郵便, 郵便物",
+        "answer": "post"
+    },
+    {
+        "question": "~すべきである",
+        "answer": "should"
+    },
+    {
+        "question": "浴室, トイレ",
+        "answer": "bathroom"
+    },
+    {
+        "question": "~を閉じる, 閉める",
+        "answer": "close"
+    },
+    {
+        "question": "ドア, 戸, 扉",
+        "answer": "door"
+    },
+    {
+        "question": "静かに, そっと",
+        "answer": "quietly"
+    },
+    {
+        "question": "~にアイロンをかける",
+        "answer": "iron"
+    },
+    {
+        "question": "~を守る, 保護する",
+        "answer": "protect"
+    },
+    {
+        "question": "(さっと) 体を低くする",
+        "answer": "drop"
+    },
+    {
+        "question": "~を覆う",
+        "answer": "cover"
+    }
+]

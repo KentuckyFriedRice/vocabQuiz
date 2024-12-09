@@ -1,0 +1,42 @@
+[
+    {
+        "question": "~を忘れる",
+        "answer": "forget"
+    },
+    {
+        "question": "サングラス",
+        "answer": "sunglasses"
+    },
+    {
+        "question": "~によろしくと言う",
+        "answer": "say hi to ~"
+    },
+    {
+        "question": "じゃあ, またね",
+        "answer": "take care."
+    },
+    {
+        "question": "we willの短縮形",
+        "answer": "we'll"
+    },
+    {
+        "question": "天気, 天候",
+        "answer": "weather"
+    },
+    {
+        "question": "雲",
+        "answer": "cloud"
+    },
+    {
+        "question": "冷静な",
+        "answer": "calm"
+    },
+    {
+        "question": "雨の",
+        "answer": "rainy"
+    },
+    {
+        "question": "雪の",
+        "answer": "snowy"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "旗",
+        "answer": "flag"
+    },
+    {
+        "question": "マグカップ",
+        "answer": "mug"
+    },
+    {
+        "question": "ステッカー",
+        "answer": "sticker"
+    },
+    {
+        "question": "いつでも, いつも",
+        "answer": "anytime"
+    },
+    {
+        "question": "何か",
+        "answer": "something"
+    },
+    {
+        "question": "帰る, 戻る",
+        "answer": "come back"
+    },
+    {
+        "question": "カフェ",
+        "answer": "cafe"
+    },
+    {
+        "question": "市場",
+        "answer": "market"
+    },
+    {
+        "question": "書店, 本屋",
+        "answer": "bookstore"
+    },
+    {
+        "question": "運動",
+        "answer": "exercise"
+    }
+]
