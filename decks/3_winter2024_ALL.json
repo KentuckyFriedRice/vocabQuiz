@@ -1,0 +1,402 @@
+[
+    {
+        "question": "尋ねる, 頼む",
+        "answer": "ask"
+    },
+    {
+        "question": "~になる",
+        "answer": "become"
+    },
+    {
+        "question": "始める",
+        "answer": "begin"
+    },
+    {
+        "question": "信じる",
+        "answer": "believe"
+    },
+    {
+        "question": "借りる",
+        "answer": "borrow"
+    },
+    {
+        "question": "生まれる",
+        "answer": "be born"
+    },
+    {
+        "question": "壊れる, 壊す",
+        "answer": "break"
+    },
+    {
+        "question": "建てる",
+        "answer": "build"
+    },
+    {
+        "question": "持ってくる",
+        "answer": "bring"
+    },
+    {
+        "question": "買った",
+        "answer": "bought"
+    },
+    {
+        "question": "呼ぶ",
+        "answer": "call"
+    },
+    {
+        "question": "来た",
+        "answer": "came"
+    },
+    {
+        "question": "運ぶ",
+        "answer": "carry"
+    },
+    {
+        "question": "集める, 募る",
+        "answer": "gather"
+    },
+    {
+        "question": "~を続ける",
+        "answer": "continue"
+    },
+    {
+        "question": "料理する",
+        "answer": "cook"
+    },
+    {
+        "question": "~できた",
+        "answer": "could"
+    },
+    {
+        "question": "躍る",
+        "answer": "dance"
+    },
+    {
+        "question": "決心する, 決定する",
+        "answer": "decide"
+    },
+    {
+        "question": "頼る, 依存する",
+        "answer": "depend"
+    },
+    {
+        "question": "~を描く",
+        "answer": "draw"
+    },
+    {
+        "question": "食べる",
+        "answer": "eat"
+    },
+    {
+        "question": "楽しむ",
+        "answer": "enjoy"
+    },
+    {
+        "question": "説明する",
+        "answer": "explain"
+    },
+    {
+        "question": "表現する",
+        "answer": "express"
+    },
+    {
+        "question": "見つける",
+        "answer": "find"
+    },
+    {
+        "question": "感じる",
+        "answer": "feel"
+    },
+    {
+        "question": "与えた, あげた",
+        "answer": "gave"
+    },
+    {
+        "question": "成長する, 育つ",
+        "answer": "grow"
+    },
+    {
+        "question": "向上させる, 改善する",
+        "answer": "improve"
+    },
+    {
+        "question": "~を紹介する",
+        "answer": "introduce"
+    },
+    {
+        "question": "~を招く",
+        "answer": "invite"
+    },
+    {
+        "question": "~を守る, 維持する",
+        "answer": "keep"
+    },
+    {
+        "question": "~を学ぶ",
+        "answer": "learn"
+    },
+    {
+        "question": "~を去る, 離れる",
+        "answer": "leave"
+    },
+    {
+        "question": "知っている",
+        "answer": "know"
+    },
+    {
+        "question": "(声を立てて) 笑う",
+        "answer": "laugh"
+    },
+    {
+        "question": "~を貸す",
+        "answer": "borrow"
+    },
+    {
+        "question": "~で負ける, ~をなくす",
+        "answer": "lose"
+    },
+    {
+        "question": "~を気にする",
+        "answer": "mind"
+    },
+    {
+        "question": "~を感動させる, 引っ越す",
+        "answer": "move"
+    },
+    {
+        "question": "必要とする",
+        "answer": "need"
+    },
+    {
+        "question": "練習する",
+        "answer": "practice"
+    },
+    {
+        "question": "約束する",
+        "answer": "promise"
+    },
+    {
+        "question": "聞く",
+        "answer": "listen"
+    },
+    {
+        "question": "~思い出す",
+        "answer": "remember"
+    },
+    {
+        "question": "~を思い出させる",
+        "answer": "remind"
+    },
+    {
+        "question": "言った",
+        "answer": "said"
+    },
+    {
+        "question": "見る, 会う, わかる",
+        "answer": "see"
+    },
+    {
+        "question": "~を送る",
+        "answer": "send"
+    },
+    {
+        "question": "~を分かち合う",
+        "answer": "share"
+    },
+    {
+        "question": "(ある言語を)話す",
+        "answer": "speak"
+    },
+    {
+        "question": "~に話す, 伝える",
+        "answer": "tell"
+    },
+    {
+        "question": "思った, 考えた",
+        "answer": "thought"
+    },
+    {
+        "question": "訪問する",
+        "answer": "visit"
+    },
+    {
+        "question": "ほしい",
+        "answer": "want"
+    },
+    {
+        "question": "歩く",
+        "answer": "walk"
+    },
+    {
+        "question": "洗う",
+        "answer": "wash"
+    },
+    {
+        "question": "書いた",
+        "answer": "wrote"
+    },
+    {
+        "question": "到着する",
+        "answer": "arrive"
+    },
+    {
+        "question": "言葉, 言語",
+        "answer": "langauge"
+    },
+    {
+        "question": "文化",
+        "answer": "culture"
+    },
+    {
+        "question": "図書館",
+        "answer": "library"
+    },
+    {
+        "question": "ボランティア",
+        "answer": "volunteer"
+    },
+    {
+        "question": "コンピュータ",
+        "answer": "computer"
+    },
+    {
+        "question": "おいしい",
+        "answer": "delicious"
+    },
+    {
+        "question": "お気に入りの, 大好きな",
+        "answer": "favorite"
+    },
+    {
+        "question": "努力",
+        "answer": "effort"
+    },
+    {
+        "question": "有名な",
+        "answer": "famous"
+    },
+    {
+        "question": "人気のある",
+        "answer": "popular"
+    },
+    {
+        "question": "外国の",
+        "answer": "foreign"
+    },
+    {
+        "question": "興味深い, おもしろい",
+        "answer": "interesting"
+    },
+    {
+        "question": "自然",
+        "answer": "nature"
+    },
+    {
+        "question": "環境",
+        "answer": "environment"
+    },
+    {
+        "question": "必要な",
+        "answer": "necessary"
+    },
+    {
+        "question": "問題",
+        "answer": "problem"
+    },
+    {
+        "question": "レストラン",
+        "answer": "restaurant"
+    },
+    {
+        "question": "理科, 科学",
+        "answer": "science"
+    },
+    {
+        "question": "変な, いつもとちがう",
+        "answer": "strange"
+    },
+    {
+        "question": "教科",
+        "answer": "subject"
+    },
+    {
+        "question": "昨日",
+        "answer": "yesterday"
+    },
+    {
+        "question": "明日",
+        "answer": "tomorrow"
+    },
+    {
+        "question": "伝統的な",
+        "answer": "traditional"
+    },
+    {
+        "question": "天気, 天候",
+        "answer": "weather"
+    },
+    {
+        "question": "制服",
+        "answer": "uniform"
+    },
+    {
+        "question": "写真, 絵",
+        "answer": "picture"
+    },
+    {
+        "question": "場所",
+        "answer": "place"
+    },
+    {
+        "question": "楽しかったです(3)",
+        "answer": "It was fun."
+    },
+    {
+        "question": "どうか, どうぞ",
+        "answer": "please"
+    },
+    {
+        "question": "大切な",
+        "answer": "important"
+    },
+    {
+        "question": "私は頑張ります。",
+        "answer": "I'll do my best."
+    },
+    {
+        "question": "~へ行ったことがある(3)",
+        "answer": "have been to~"
+    },
+    {
+        "question": "かんたんな",
+        "answer": "easy"
+    },
+    {
+        "question": "役に立つ",
+        "answer": "useful"
+    },
+    {
+        "question": "不安で, 緊張して",
+        "answer": "nervous"
+    },
+    {
+        "question": "博物館, 美術館",
+        "answer": "museum"
+    },
+    {
+        "question": "決して~ない, 一度も~ない",
+        "answer": "never"
+    },
+    {
+        "question": "~をリサイクルする",
+        "answer": "recycle"
+    },
+    {
+        "question": "これら",
+        "answer": "these"
+    },
+    {
+        "question": "あれら",
+        "answer": "those"
+    }
+]
