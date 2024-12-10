@@ -191,7 +191,7 @@ function checkAnswer() {
         
         // Increment the score for the first attempt or the second attempt if it's correct
         //if (!hasTriedOnce) {
-        //    score++;  // Increment score only if the user hasn't already retried
+        score++;  // Increment score only if the user hasn't already retried
         //}
 
         // Move to the next question or display results if it's the final flashcard
