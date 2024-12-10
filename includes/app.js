@@ -57,7 +57,7 @@ function showDecks() {
         label.appendChild(document.createTextNode(deck.name));
         checkboxList.appendChild(label);
         checkboxList.appendChild(document.createElement('br'));
-        if(index%10==0&&index!=0){checkboxList.appendChild(document.createElement('hr'));}
+        if((index+1)%11==0){checkboxList.appendChild(document.createElement('hr'));}
         if (selectedDecks.includes(checkbox.value)) {
             checkbox.checked = true;
         }
