@@ -19,7 +19,7 @@ body {
 }
 
 #decks-container{
-    height:60%;
+    height:600px;
     overflow:auto;
 }
 
