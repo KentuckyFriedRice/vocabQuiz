@@ -101,6 +101,12 @@ function startQuiz() {
         return; // Prevent further execution if no decks are selected
     }
 
+    //check for shuffle checkbox and shuffle deck
+    if (document.getElementById("shuffle").checked == true){
+        shuffle(flashcards);
+        console.log(flashcards);
+    }
+    
     // Hide start button and show question container
     document.getElementById('start-container').style.display = 'none';
     document.getElementById('question-container').style.display = 'block';
@@ -127,10 +133,6 @@ function loadDecks() {
     
     Promise.all(promises).then(deckDataArray => {
         flashcards = [].concat(...deckDataArray); // Merge all flashcards into one array
-        if (document.getElementById("shuffle").checked == true){
-            shuffle(flashcards);
-            console.log(flashcards);
-        }
         displayFlashcard(); // Display the first flashcard
     }).catch(error => console.error('Error loading flashcards:', error));
 }
