@@ -116,7 +116,7 @@ function loadDecks() {
     
     Promise.all(promises).then(deckDataArray => {
         flashcards = [].concat(...deckDataArray); // Merge all flashcards into one array
-        if document.getElementByID("shuffle").checked == true{
+        if (document.getElementByID("shuffle").checked == true){
             shuffle(flashcards);
         }
         displayFlashcard(); // Display the first flashcard
