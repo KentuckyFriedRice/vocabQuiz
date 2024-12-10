@@ -18,7 +18,7 @@ body {
     text-align: center;
 }
 
-#decks-container{
+#checkbox-list{
     height:600px;
     overflow:auto;
 }
