@@ -118,6 +118,7 @@ function loadDecks() {
         flashcards = [].concat(...deckDataArray); // Merge all flashcards into one array
         if (document.getElementById("shuffle").checked == true){
             shuffle(flashcards);
+            console.log(flashcards);
         }
         displayFlashcard(); // Display the first flashcard
     }).catch(error => console.error('Error loading flashcards:', error));
