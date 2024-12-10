@@ -19,7 +19,8 @@ const availableDecks = [
     { name: '2年 Winter 61-70', file: 'decks/2_winter2024/winter2024_61-70.json' },
     { name: '2年 Winter 71-80', file: 'decks/2_winter2024/winter2024_71-80.json' },
     { name: '2年 Winter 81-90', file: 'decks/2_winter2024/winter2024_81-90.json' },
-    { name: '2年 Winter 91-100', file: 'decks/2_winter2024/winter2024_91-100.json' }
+    { name: '2年 Winter 91-100', file: 'decks/2_winter2024/winter2024_91-100.json' },
+    { name: '3年 Winter ALL', file: 'decks/3_winter2024/3_winter2024_ALL.json' }
     //{ name: 'Deck 3', file: 'decks/deck3.json' }
 ];
 
