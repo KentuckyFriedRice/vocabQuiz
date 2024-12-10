@@ -116,6 +116,9 @@ function loadDecks() {
     
     Promise.all(promises).then(deckDataArray => {
         flashcards = [].concat(...deckDataArray); // Merge all flashcards into one array
+        if document.getElementByID("shuffle").checked == true{
+            shuffle(flashcards);
+        }
         displayFlashcard(); // Display the first flashcard
     }).catch(error => console.error('Error loading flashcards:', error));
 }
@@ -234,3 +237,19 @@ window.onload = function() {
     //    }
    // });
 };
+
+function shuffle(array) {
+  let currentIndex = array.length;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+}
