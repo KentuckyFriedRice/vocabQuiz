@@ -8,8 +8,18 @@ let selectedDecks = []; // Array to store selected deck names
 
 // Sample JSON files (you should replace these with your actual JSON files)
 const availableDecks = [
-    //{ name: 'Example', file: 'decks/sample.json' },
-    { name: '2年 Winter', file: 'decks/winter2024.json' },
+    { name: 'Example', file: 'decks/sample.json' },
+    { name: '2年 Winter ALL', file: 'decks/2_winter2024/2_winter2024_ALL.json' },
+    { name: '2年 Winter 1-10', file: 'decks/2_winter2024/winter2024_1-10.json' },
+    { name: '2年 Winter 11-20', file: 'decks/2_winter2024/winter2024_11-20.json' },
+    { name: '2年 Winter 21-30', file: 'decks/2_winter2024/winter2024_21-30.json' },
+    { name: '2年 Winter 31-40', file: 'decks/2_winter2024/winter2024_31-40.json' },
+    { name: '2年 Winter 41-50', file: 'decks/2_winter2024/winter2024_41-50.json' },
+    { name: '2年 Winter 51-60', file: 'decks/2_winter2024/winter2024_51-60.json' },
+    { name: '2年 Winter 61-70', file: 'decks/2_winter2024/winter2024_61-70.json' },
+    { name: '2年 Winter 71-80', file: 'decks/2_winter2024/winter2024_71-80.json' },
+    { name: '2年 Winter 81-90', file: 'decks/2_winter2024/winter2024_81-90.json' },
+    { name: '2年 Winter 91-100', file: 'decks/2_winter2024/winter2024_91-100.json' }
     //{ name: 'Deck 3', file: 'decks/deck3.json' }
 ];
 
