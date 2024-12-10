@@ -1,0 +1,42 @@
+[
+    {
+        "question": "尋ねる, 頼む",
+        "answer": "ask"
+    },
+    {
+        "question": "~になる",
+        "answer": "become"
+    },
+    {
+        "question": "始める",
+        "answer": "begin"
+    },
+    {
+        "question": "信じる",
+        "answer": "believe"
+    },
+    {
+        "question": "借りる",
+        "answer": "borrow"
+    },
+    {
+        "question": "生まれる",
+        "answer": "be born"
+    },
+    {
+        "question": "壊れる, 壊す",
+        "answer": "break"
+    },
+    {
+        "question": "建てる",
+        "answer": "build"
+    },
+    {
+        "question": "持ってくる",
+        "answer": "bring"
+    },
+    {
+        "question": "買った",
+        "answer": "bought"
+    }
+]

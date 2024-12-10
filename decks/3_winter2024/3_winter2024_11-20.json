@@ -1,0 +1,42 @@
+[
+    {
+        "question": "呼ぶ",
+        "answer": "call"
+    },
+    {
+        "question": "来た",
+        "answer": "came"
+    },
+    {
+        "question": "運ぶ",
+        "answer": "carry"
+    },
+    {
+        "question": "集める, 募る",
+        "answer": "gather"
+    },
+    {
+        "question": "~を続ける",
+        "answer": "continue"
+    },
+    {
+        "question": "料理する",
+        "answer": "cook"
+    },
+    {
+        "question": "~できた",
+        "answer": "could"
+    },
+    {
+        "question": "躍る",
+        "answer": "dance"
+    },
+    {
+        "question": "決心する, 決定する",
+        "answer": "decide"
+    },
+    {
+        "question": "頼る, 依存する",
+        "answer": "depend"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "~を描く",
+        "answer": "draw"
+    },
+    {
+        "question": "食べる",
+        "answer": "eat"
+    },
+    {
+        "question": "楽しむ",
+        "answer": "enjoy"
+    },
+    {
+        "question": "説明する",
+        "answer": "explain"
+    },
+    {
+        "question": "表現する",
+        "answer": "express"
+    },
+    {
+        "question": "見つける",
+        "answer": "find"
+    },
+    {
+        "question": "感じる",
+        "answer": "feel"
+    },
+    {
+        "question": "与えた, あげた",
+        "answer": "gave"
+    },
+    {
+        "question": "成長する, 育つ",
+        "answer": "grow"
+    },
+    {
+        "question": "向上させる, 改善する",
+        "answer": "improve"
+    }
+]

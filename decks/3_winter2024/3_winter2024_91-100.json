@@ -1,0 +1,42 @@
+[
+    {
+        "question": "私は頑張ります。",
+        "answer": "I'll do my best."
+    },
+    {
+        "question": "~へ行ったことがある(3)",
+        "answer": "have been to~"
+    },
+    {
+        "question": "かんたんな",
+        "answer": "easy"
+    },
+    {
+        "question": "役に立つ",
+        "answer": "useful"
+    },
+    {
+        "question": "不安で, 緊張して",
+        "answer": "nervous"
+    },
+    {
+        "question": "博物館, 美術館",
+        "answer": "museum"
+    },
+    {
+        "question": "決して~ない, 一度も~ない",
+        "answer": "never"
+    },
+    {
+        "question": "~をリサイクルする",
+        "answer": "recycle"
+    },
+    {
+        "question": "これら",
+        "answer": "these"
+    },
+    {
+        "question": "あれら",
+        "answer": "those"
+    }
+]

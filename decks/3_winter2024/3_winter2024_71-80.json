@@ -1,0 +1,42 @@
+[
+    {
+        "question": "外国の",
+        "answer": "foreign"
+    },
+    {
+        "question": "興味深い, おもしろい",
+        "answer": "interesting"
+    },
+    {
+        "question": "自然",
+        "answer": "nature"
+    },
+    {
+        "question": "環境",
+        "answer": "environment"
+    },
+    {
+        "question": "必要な",
+        "answer": "necessary"
+    },
+    {
+        "question": "問題",
+        "answer": "problem"
+    },
+    {
+        "question": "レストラン",
+        "answer": "restaurant"
+    },
+    {
+        "question": "理科, 科学",
+        "answer": "science"
+    },
+    {
+        "question": "変な, いつもとちがう",
+        "answer": "strange"
+    },
+    {
+        "question": "教科",
+        "answer": "subject"
+    }
+]

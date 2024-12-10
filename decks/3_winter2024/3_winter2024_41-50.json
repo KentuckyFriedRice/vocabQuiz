@@ -1,0 +1,42 @@
+[
+    {
+        "question": "~を感動させる, 引っ越す",
+        "answer": "move"
+    },
+    {
+        "question": "必要とする",
+        "answer": "need"
+    },
+    {
+        "question": "練習する",
+        "answer": "practice"
+    },
+    {
+        "question": "約束する",
+        "answer": "promise"
+    },
+    {
+        "question": "聞く",
+        "answer": "listen"
+    },
+    {
+        "question": "~思い出す",
+        "answer": "remember"
+    },
+    {
+        "question": "~を思い出させる",
+        "answer": "remind"
+    },
+    {
+        "question": "言った",
+        "answer": "said"
+    },
+    {
+        "question": "見る, 会う, わかる",
+        "answer": "see"
+    },
+    {
+        "question": "~を送る",
+        "answer": "send"
+    }
+]

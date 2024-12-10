@@ -1,0 +1,42 @@
+[
+    {
+        "question": "~を紹介する",
+        "answer": "introduce"
+    },
+    {
+        "question": "~を招く",
+        "answer": "invite"
+    },
+    {
+        "question": "~を守る, 維持する",
+        "answer": "keep"
+    },
+    {
+        "question": "~を学ぶ",
+        "answer": "learn"
+    },
+    {
+        "question": "~を去る, 離れる",
+        "answer": "leave"
+    },
+    {
+        "question": "知っている",
+        "answer": "know"
+    },
+    {
+        "question": "(声を立てて) 笑う",
+        "answer": "laugh"
+    },
+    {
+        "question": "~を貸す",
+        "answer": "borrow"
+    },
+    {
+        "question": "~で負ける, ~をなくす",
+        "answer": "lose"
+    },
+    {
+        "question": "~を気にする",
+        "answer": "mind"
+    }
+]

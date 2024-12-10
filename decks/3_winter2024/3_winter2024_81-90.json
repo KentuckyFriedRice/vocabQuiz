@@ -1,0 +1,42 @@
+[
+    {
+        "question": "昨日",
+        "answer": "yesterday"
+    },
+    {
+        "question": "明日",
+        "answer": "tomorrow"
+    },
+    {
+        "question": "伝統的な",
+        "answer": "traditional"
+    },
+    {
+        "question": "天気, 天候",
+        "answer": "weather"
+    },
+    {
+        "question": "制服",
+        "answer": "uniform"
+    },
+    {
+        "question": "写真, 絵",
+        "answer": "picture"
+    },
+    {
+        "question": "場所",
+        "answer": "place"
+    },
+    {
+        "question": "楽しかったです(3)",
+        "answer": "It was fun."
+    },
+    {
+        "question": "どうか, どうぞ",
+        "answer": "please"
+    },
+    {
+        "question": "大切な",
+        "answer": "important"
+    }
+]

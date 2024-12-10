@@ -1,0 +1,42 @@
+[
+    {
+        "question": "~を分かち合う",
+        "answer": "share"
+    },
+    {
+        "question": "(ある言語を)話す",
+        "answer": "speak"
+    },
+    {
+        "question": "~に話す, 伝える",
+        "answer": "tell"
+    },
+    {
+        "question": "思った, 考えた",
+        "answer": "thought"
+    },
+    {
+        "question": "訪問する",
+        "answer": "visit"
+    },
+    {
+        "question": "ほしい",
+        "answer": "want"
+    },
+    {
+        "question": "歩く",
+        "answer": "walk"
+    },
+    {
+        "question": "洗う",
+        "answer": "wash"
+    },
+    {
+        "question": "書いた",
+        "answer": "wrote"
+    },
+    {
+        "question": "到着する",
+        "answer": "arrive"
+    }
+]
