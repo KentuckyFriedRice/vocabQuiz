@@ -18,6 +18,10 @@ body {
     text-align: center;
 }
 
+.decks-container{
+    overflow:auto;
+}
+
 #question {
     margin-bottom: 20px;
 }
