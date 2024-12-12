@@ -1,0 +1,42 @@
+[
+    {
+        "question": "午後",
+        "answer": "afternoon"
+    },
+    {
+        "question": "勉強する",
+        "answer": "study"
+    },
+    {
+        "question": "家",
+        "answer": "house"
+    },
+    {
+        "question": "入浴",
+        "answer": "bath"
+    },
+    {
+        "question": "~よりも前に",
+        "answer": "before"
+    },
+    {
+        "question": "夕食",
+        "answer": "dinner"
+    },
+    {
+        "question": "開いた, 開ける",
+        "answer": "open"
+    },
+    {
+        "question": "休息",
+        "answer": "break"
+    },
+    {
+        "question": "非常に",
+        "answer": "very"
+    },
+    {
+        "question": "活発な",
+        "answer": "active"
+    }
+]

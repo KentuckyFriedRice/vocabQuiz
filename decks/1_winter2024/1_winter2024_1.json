@@ -1,0 +1,42 @@
+[
+    {
+        "question": "~を楽しむ",
+        "answer": "enjoy"
+    },
+    {
+        "question": "訪問する",
+        "answer": "visit"
+    },
+    {
+        "question": "宿題",
+        "answer": "homework"
+    },
+    {
+        "question": "挑戦する",
+        "answer": "try"
+    },
+    {
+        "question": "~の間に",
+        "answer": "during"
+    },
+    {
+        "question": "休み, 休暇",
+        "answer": "vacation"
+    },
+    {
+        "question": "~と一緒に, (道具)~で",
+        "answer": "with"
+    },
+    {
+        "question": "家族",
+        "answer": "family"
+    },
+    {
+        "question": "ただ~だけ",
+        "answer": "just"
+    },
+    {
+        "question": "退屈な, うんざりさせる",
+        "answer": "boring"
+    }
+]

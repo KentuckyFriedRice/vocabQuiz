@@ -1,0 +1,42 @@
+[
+    {
+        "question": "勇敢な",
+        "answer": "brave"
+    },
+    {
+        "question": "恥ずかしい",
+        "answer": "shy"
+    },
+    {
+        "question": "入り口",
+        "answer": "entrance"
+    },
+    {
+        "question": "~の後ろに",
+        "answer": "behind"
+    },
+    {
+        "question": "前方",
+        "answer": "front"
+    },
+    {
+        "question": "体育館",
+        "answer": "gym"
+    },
+    {
+        "question": "~の間に",
+        "answer": "between"
+    },
+    {
+        "question": "~の近くに",
+        "answer": "near"
+    },
+    {
+        "question": "隣の",
+        "answer": "next"
+    },
+    {
+        "question": "(食べ物)を出す",
+        "answer": "serve"
+    }
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "question": "(写真を)撮る, (物)をとる",
+        "answer": "take"
+    },
+    {
+        "question": "絵, 写真",
+        "answer": "picture"
+    },
+    {
+        "question": "~を使う",
+        "answer": "use"
+    },
+    {
+        "question": "コンピューター",
+        "answer": "computer"
+    },
+    {
+        "question": "これらは, これらの",
+        "answer": "these"
+    },
+    {
+        "question": "あれらは, あれらの",
+        "answer": "those"
+    },
+    {
+        "question": "手に入れる",
+        "answer": "get"
+    },
+    {
+        "question": "重い",
+        "answer": "heavy"
+    },
+    {
+        "question": "そのほかに",
+        "answer": "else"
+    },
+    {
+        "question": "花",
+        "answer": "flower"
+    }
+]
