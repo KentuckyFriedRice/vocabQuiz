@@ -44,6 +44,10 @@ button {
     cursor: pointer;
 }
 
+#confirm-decks-button {
+    margin-top:10px;
+}
+
 #submit-answer:hover {
     background-color: #45a049;
 }
