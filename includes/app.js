@@ -8,8 +8,56 @@ let selectedDecks = []; // Array to store selected deck names
 
 // Sample JSON files (you should replace these with your actual JSON files)
 const availableDecks = [
+    {
+        grade: '1年',
+        decks: [
+            { name: '1年 Winter ALL', file: 'decks/1_winter2024/1_winter2024_ALL.json' },
+            { name: '1年 Winter 1-10', file: 'decks/1_winter2024/1_winter2024_1.json' },
+            { name: '1年 Winter 11-20', file: 'decks/1_winter2024/1_winter2024_2.json' },
+            { name: '1年 Winter 21-30', file: 'decks/1_winter2024/1_winter2024_3.json' },
+            { name: '1年 Winter 31-40', file: 'decks/1_winter2024/1_winter2024_4.json' },
+            { name: '1年 Winter 41-50', file: 'decks/1_winter2024/1_winter2024_5.json' },
+            { name: '1年 Winter 51-60', file: 'decks/1_winter2024/1_winter2024_6.json' },
+            { name: '1年 Winter 61-70', file: 'decks/1_winter2024/1_winter2024_7.json' },
+            { name: '1年 Winter 71-80', file: 'decks/1_winter2024/1_winter2024_8.json' },
+            { name: '1年 Winter 81-90', file: 'decks/1_winter2024/1_winter2024_9.json' },
+            { name: '1年 Winter 91-100', file: 'decks/1_winter2024/1_winter2024_10.json' }
+        ]
+    },
+    {
+        grade: '2年',
+        decks: [
+            { name: '2年 Winter ALL', file: 'decks/2_winter2024/2_winter2024_ALL.json' },
+            { name: '2年 Winter 1-10', file: 'decks/2_winter2024/winter2024_1-10.json' },
+            { name: '2年 Winter 11-20', file: 'decks/2_winter2024/winter2024_11-20.json' },
+            { name: '2年 Winter 21-30', file: 'decks/2_winter2024/winter2024_21-30.json' },
+            { name: '2年 Winter 31-40', file: 'decks/2_winter2024/winter2024_31-40.json' },
+            { name: '2年 Winter 41-50', file: 'decks/2_winter2024/winter2024_41-50.json' },
+            { name: '2年 Winter 51-60', file: 'decks/2_winter2024/winter2024_51-60.json' },
+            { name: '2年 Winter 61-70', file: 'decks/2_winter2024/winter2024_61-70.json' },
+            { name: '2年 Winter 71-80', file: 'decks/2_winter2024/winter2024_71-80.json' },
+            { name: '2年 Winter 81-90', file: 'decks/2_winter2024/winter2024_81-90.json' },
+            { name: '2年 Winter 91-100', file: 'decks/2_winter2024/winter2024_91-100.json' }
+        ]
+    },
+    {
+        grade: '3年',
+        decks: [
+            { name: '3年 Winter ALL', file: 'decks/3_winter2024/3_winter2024_ALL.json' },
+            { name: '3年 Winter 1-10', file: 'decks/3_winter2024/3_winter2024_1-10.json' },
+            { name: '3年 Winter 11-20', file: 'decks/3_winter2024/3_winter2024_11-20.json' },
+            { name: '3年 Winter 21-30', file: 'decks/3_winter2024/3_winter2024_21-30.json' },
+            { name: '3年 Winter 31-40', file: 'decks/3_winter2024/3_winter2024_31-40.json' },
+            { name: '3年 Winter 41-50', file: 'decks/3_winter2024/3_winter2024_41-50.json' },
+            { name: '3年 Winter 51-60', file: 'decks/3_winter2024/3_winter2024_51-60.json' },
+            { name: '3年 Winter 61-70', file: 'decks/3_winter2024/3_winter2024_61-70.json' },
+            { name: '3年 Winter 71-80', file: 'decks/3_winter2024/3_winter2024_71-80.json' },
+            { name: '3年 Winter 81-90', file: 'decks/3_winter2024/3_winter2024_81-90.json' },
+            { name: '3年 Winter 91-100', file: 'decks/3_winter2024/3_winter2024_91-100.json' }
+        ]
+    }
     //{ name: 'Example', file: 'decks/sample.json' },
-    { name: '1年 Winter ALL', file: 'decks/1_winter2024/1_winter2024_ALL.json' },
+    /*{ name: '1年 Winter ALL', file: 'decks/1_winter2024/1_winter2024_ALL.json' },
     { name: '1年 Winter 1-10', file: 'decks/1_winter2024/1_winter2024_1.json' },
     { name: '1年 Winter 11-20', file: 'decks/1_winter2024/1_winter2024_2.json' },
     { name: '1年 Winter 21-30', file: 'decks/1_winter2024/1_winter2024_3.json' },
@@ -41,7 +89,7 @@ const availableDecks = [
     { name: '3年 Winter 61-70', file: 'decks/3_winter2024/3_winter2024_61-70.json' },
     { name: '3年 Winter 71-80', file: 'decks/3_winter2024/3_winter2024_71-80.json' },
     { name: '3年 Winter 81-90', file: 'decks/3_winter2024/3_winter2024_81-90.json' },
-    { name: '3年 Winter 91-100', file: 'decks/3_winter2024/3_winter2024_91-100.json' }
+    { name: '3年 Winter 91-100', file: 'decks/3_winter2024/3_winter2024_91-100.json' }*/
 ];
 
 // Event listener for the start button
@@ -52,29 +100,40 @@ document.getElementById('decks-button').addEventListener('click', showDecks);
 
 // Function to display the decks for selection
 function showDecks() {
-    // Hide the start container and show the decks container
     document.getElementById('start-container').style.display = 'none';
     const checkboxList = document.getElementById('checkbox-list');
     checkboxList.innerHTML = ''; // Clear previous checkboxes
 
-    // Create checkboxes for each available deck
-    availableDecks.forEach((deck, index) => {
-        const label = document.createElement('label');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.value = deck.file; // Use file path as value
-        checkbox.name = deck.name; // Use deck name for identification
-        label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(deck.name));
-        checkboxList.appendChild(label);
-        checkboxList.appendChild(document.createElement('br'));
-        if((index+1)%11==0){checkboxList.appendChild(document.createElement('hr'));}
-        if (selectedDecks.includes(checkbox.value)) {
-            checkbox.checked = true;
-        }
+    availableDecks.forEach(group => {
+        const details = document.createElement('details');
+        const summary = document.createElement('summary');
+        summary.textContent = group.grade;
+        details.appendChild(summary);
+
+        group.decks.forEach((deck, index) => {
+            const label = document.createElement('label');
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.value = deck.file;
+            checkbox.name = deck.name;
+
+            if (selectedDecks.includes(checkbox.value)) {
+                checkbox.checked = true;
+            }
+
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(deck.name));
+            details.appendChild(label);
+            details.appendChild(document.createElement('br'));
+
+            if ((index + 1) % 10 === 0) {
+                details.appendChild(document.createElement('hr'));
+            }
+        });
+
+        checkboxList.appendChild(details);
     });
 
-    // Show the decks container
     document.getElementById('decks-container').style.display = 'block';
 }
 
