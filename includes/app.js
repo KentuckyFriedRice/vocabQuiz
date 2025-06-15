@@ -22,7 +22,7 @@ const availableDecks = [
             { name: '1年 Winter 71-80', file: 'decks/1_winter2024/1_winter2024_8.json' },
             { name: '1年 Winter 81-90', file: 'decks/1_winter2024/1_winter2024_9.json' },
             { name: '1年 Winter 91-100', file: 'decks/1_winter2024/1_winter2024_10.json' }*/
-            { name: 'Here We Go 1 Unit 1', file: 'decks/1_tak/' }
+            { name: 'Here We Go 1 Unit 1', file: 'decks/1_tak/HereWeGo1Unit1.json' }
         ]
     },
     {
