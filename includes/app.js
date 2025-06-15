@@ -11,7 +11,7 @@ const availableDecks = [
     {
         grade: '1年',
         decks: [
-            { name: '1年 Winter ALL', file: 'decks/1_winter2024/1_winter2024_ALL.json' },
+            /*{ name: '1年 Winter ALL', file: 'decks/1_winter2024/1_winter2024_ALL.json' },
             { name: '1年 Winter 1-10', file: 'decks/1_winter2024/1_winter2024_1.json' },
             { name: '1年 Winter 11-20', file: 'decks/1_winter2024/1_winter2024_2.json' },
             { name: '1年 Winter 21-30', file: 'decks/1_winter2024/1_winter2024_3.json' },
@@ -21,7 +21,8 @@ const availableDecks = [
             { name: '1年 Winter 61-70', file: 'decks/1_winter2024/1_winter2024_7.json' },
             { name: '1年 Winter 71-80', file: 'decks/1_winter2024/1_winter2024_8.json' },
             { name: '1年 Winter 81-90', file: 'decks/1_winter2024/1_winter2024_9.json' },
-            { name: '1年 Winter 91-100', file: 'decks/1_winter2024/1_winter2024_10.json' }
+            { name: '1年 Winter 91-100', file: 'decks/1_winter2024/1_winter2024_10.json' }*/
+            { name: 'Here We Go 1 Unit 1', file: 'decks/1_tak/' }
         ]
     },
     {
