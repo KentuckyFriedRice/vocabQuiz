@@ -215,8 +215,12 @@ document.getElementById('answer').addEventListener('keypress', function(event) {
 // Function to check the answer
 function checkAnswer() {
     const userAnswer = document.getElementById('answer').value.trim();
-    const correctAnswer = flashcards[currentCardIndex].answer;
-
+    if (document.getElementById("shuffle").checked == false){
+        const correctAnswer = flashcards[currentCardIndex].answer;
+    }
+    else{
+        const correctAnswer = flashcards[currentCardIndex].answer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
+    }
     // Clear the answer box after submission
     document.getElementById('answer').value = '';  // Clear the input box after checking the answer
 
