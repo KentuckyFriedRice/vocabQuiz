@@ -278,7 +278,6 @@ window.onload = function() {
 
     //Setting options
     const savedOptions = JSON.parse(localStorage.getItem('selectedOptions'));
-    console.log(savedOptions);
     
     if (savedDecks && savedDecks.length > 0) {
         document.getElementById('shuffle').checked = savedOptions[0];
