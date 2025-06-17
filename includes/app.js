@@ -279,6 +279,9 @@ window.onload = function() {
     //Setting options
     const savedOptions = JSON.parse(localStorage.getItem('selectedOptions'));
     console.log(savedOptions);
+    document.getElementById('shuffle').checked = savedOptions[0];
+    document.getElementById('punct').checked = savedOptions[1];
+    document.getElementById('caps').checked = savedOptions[2];
     
     if (savedDecks && savedDecks.length > 0) {
         selectedDecks = savedDecks;
