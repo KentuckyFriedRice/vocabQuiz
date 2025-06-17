@@ -107,7 +107,7 @@ document.getElementById('confirm-decks-button').addEventListener('click', confir
 function confirmDecks() {
     const checkboxes = document.querySelectorAll('#checkbox-list input[type="checkbox"]');
     selectedDecks = []; // Reset selected decks
-    selectedOptions = [document.getElementById('shuffle').value, document.getElementById('punct').value, document.getElementById('caps').value];
+    selectedOptions = [document.getElementById('shuffle').checked, document.getElementById('punct').checked, document.getElementById('caps').checked];
 
     // Save selected options to Local Storage
     localStorage.setItem('selectedOptions', JSON.stringify(selectedOptions));
