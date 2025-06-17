@@ -278,7 +278,7 @@ window.onload = function() {
 
     //Setting options
     const savedOptions = JSON.parse(localStorage.getItem('selectedOptions'));
-    console.log(selectedOptions);
+    console.log(savedOptions);
     
     if (savedDecks && savedDecks.length > 0) {
         selectedDecks = savedDecks;
