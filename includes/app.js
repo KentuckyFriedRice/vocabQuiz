@@ -167,7 +167,7 @@ function loadDecks() {
         //check for shuffle checkbox and shuffle deck
         if (document.getElementById("shuffle").checked == true){
             shuffle(flashcards);
-            console.log(flashcards);
+            //console.log(flashcards);
         }
         displayFlashcard(); // Display the first flashcard
     }).catch(error => console.error('Error loading flashcards:', error));
