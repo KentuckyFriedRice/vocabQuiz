@@ -107,6 +107,10 @@ document.getElementById('confirm-decks-button').addEventListener('click', confir
 function confirmDecks() {
     const checkboxes = document.querySelectorAll('#checkbox-list input[type="checkbox"]');
     selectedDecks = []; // Reset selected decks
+    selectedOptions = [document.getElementById('shuffle').value, document.getElementById('punct').value, document.getElementById('caps').value];
+
+    // Save selected options to Local Storage
+    localStorage.setItem('selectedOptions', JSON.stringify(selectedOptions));
 
     checkboxes.forEach(checkbox => {
         if (checkbox.checked) {
@@ -271,8 +275,10 @@ function restartQuiz() {
 window.onload = function() {
     // Load saved selected decks from Local Storage
     const savedDecks = JSON.parse(localStorage.getItem('selectedDecks'));
-    //const savedDecks = JSON.parse(localStorage.getItem('selectedDecks'));
-    console.log(selectedDecks);
+
+    //Setting options
+    const savedOptions = JSON.parse(localStorage.getItem('selectedOptions'));
+    console.log(selectedOptions);
     
     if (savedDecks && savedDecks.length > 0) {
         selectedDecks = savedDecks;
