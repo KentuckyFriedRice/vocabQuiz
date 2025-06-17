@@ -216,7 +216,7 @@ document.getElementById('answer').addEventListener('keypress', function(event) {
 function checkAnswer() {
     userAnswer = document.getElementById('answer').value.trim();
     correctAnswer = flashcards[currentCardIndex].answer;
-    if (document.getElementById("shuffle").checked == true){
+    if (document.getElementById("punct").checked == true){
         userAnswer = userAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
         console.log("1: "+userAnswer);
         correctAnswer = correctAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
