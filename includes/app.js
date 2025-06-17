@@ -218,15 +218,11 @@ function checkAnswer() {
     correctAnswer = flashcards[currentCardIndex].answer;
     if (document.getElementById("punct").checked == true){
         userAnswer = userAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
-        console.log("1: "+userAnswer);
         correctAnswer = correctAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
-        console.log("1: "+correctAnswer);
     }
     if (document.getElementById("caps").checked == true){
         userAnswer = userAnswer.toLowerCase();
-        console.log("2: "+userAnswer);
         correctAnswer = correctAnswer.toLowerCase();
-        console.log("2: "+correctAnswer);
     }
     // Clear the answer box after submission
     document.getElementById('answer').value = '';  // Clear the input box after checking the answer
