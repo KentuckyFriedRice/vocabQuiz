@@ -214,13 +214,14 @@ document.getElementById('answer').addEventListener('keypress', function(event) {
 
 // Function to check the answer
 function checkAnswer() {
-    const userAnswer = document.getElementById('answer').value.trim();
+    userAnswer = document.getElementById('answer').value.trim();
     correctAnswer = flashcards[currentCardIndex].answer;
     if (document.getElementById("shuffle").checked == true){
-        correctAnswer = flashcards[currentCardIndex].answer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
+        correctAnswer = correctAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
     }
     if (document.getElementById("caps").checked == true){
-        correctAnswer = flashcards[currentCardIndex].answer.toLowerCase();
+        userAnswer = userAnswer.toLowerCase();
+        correctAnswer = correctAnswer.toLowerCase();
     }
     // Clear the answer box after submission
     document.getElementById('answer').value = '';  // Clear the input box after checking the answer
