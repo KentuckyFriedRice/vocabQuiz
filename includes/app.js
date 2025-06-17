@@ -271,6 +271,8 @@ function restartQuiz() {
 window.onload = function() {
     // Load saved selected decks from Local Storage
     const savedDecks = JSON.parse(localStorage.getItem('selectedDecks'));
+    //const savedDecks = JSON.parse(localStorage.getItem('selectedDecks'));
+    console.log(selectedDecks);
     
     if (savedDecks && savedDecks.length > 0) {
         selectedDecks = savedDecks;
