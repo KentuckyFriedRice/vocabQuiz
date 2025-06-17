@@ -216,10 +216,10 @@ document.getElementById('answer').addEventListener('keypress', function(event) {
 function checkAnswer() {
     const userAnswer = document.getElementById('answer').value.trim();
     if (document.getElementById("shuffle").checked == false){
-        const correctAnswer = flashcards[currentCardIndex].answer;
+        correctAnswer = flashcards[currentCardIndex].answer;
     }
     else{
-        const correctAnswer = flashcards[currentCardIndex].answer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
+        correctAnswer = flashcards[currentCardIndex].answer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
     }
     // Clear the answer box after submission
     document.getElementById('answer').value = '';  // Clear the input box after checking the answer
