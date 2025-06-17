@@ -217,6 +217,7 @@ function checkAnswer() {
     userAnswer = document.getElementById('answer').value.trim();
     correctAnswer = flashcards[currentCardIndex].answer;
     if (document.getElementById("shuffle").checked == true){
+        userAnswer = userAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
         correctAnswer = correctAnswer.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g,"").replace(/\s{2,}/g," ");
     }
     if (document.getElementById("caps").checked == true){
