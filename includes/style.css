@@ -25,14 +25,16 @@ body {
 
 #question {
     margin-bottom: 20px;
+    font-size:20pt;
 }
 
 #answer {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size:20pt;
 }
 
 button {
