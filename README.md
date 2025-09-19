@@ -1,5 +1,7 @@
 # Hosted on Github Pages - [Here](https://kentuckyfriedrice.github.io/vocabQuiz/)
 
+![Home Screen](screenshots/baseScreen.png)
+
 ### Intro and Setup
 This is a web app as a basic flashcard web app where you must type the answer ***exactly***. It uses JSON files as decks with *Question* and *Answer* parameters. Unfortunately a limitation of this is that there is only one answer per question in the current layout.
 
@@ -10,21 +12,36 @@ After this is properly configured, these will then appear in the *deck menu* on 
 I also have made it so that a cookie is stored locally to save which decks and options you were using on the last visit. This way you don't have to set them every time. I wanted to use this functionality to save missed questions as a new deck when you refresh but in the end I didn't have time or the reason to continue on that path.
 
 ### In The Deck Menu
+
+![Deck Menu](screenshots/decksMenu.png)
+
 The deck menu will list the *grades* as drop down menus. Within each grade will be the *name* of each deck with a checkbox to use that deck. If your deck is not showing, please go back and make sure it is properly configured in the *includes/app.js* file.
 
 At the top there are three checkboxes to customize the experience.
 |Option|Result|
 -----|-----
-| Shuffle | randomizes the deck |
-| Lax Capitalization | Doesn't check for capitalization |
+| Shuffle | Randomizes the deck |
 | Lax Punctuation | Doesn't check for correct punctuation |
+| Lax Capitalization | Doesn't check for capitalization |
 
 From here, click the confirm button to load the decks and make the adjustments for the quiz. I added the *deck menu* so that it would give the app a few seconds to load in the vocabulary so that it seems seamless for the user.
 
+
+
 ### In The Quiz
+
+![Question Example](screenshots/quizEx1.png)
+
 After starting the quiz you will be shown a prompt, the *question*, a textbox to answer with, a submit button, and a score. The score goes up if you get the answer correct. You only get two tries. After the first miss, it will tell you to try again and automatically move on if you're wrong. The score goes up by 1 point if you get it correct.
 
+![Missed 1](screenshots/quizEx2.png)
+
+![Missed 2](screenshots/quizEx3.png)
+
 ### The Review Screen
+
+![Review Screen](screenshots/reviewScreen.png)
+
 After all questions have been shown, all missed questions, even those missed the first time, will show at the end as a list. It will display *Question*:*Answer*. This give students a chance to see all they missed and make a note of it.
 
 Also on this page is the try again button which will bring you back to the home screen.
