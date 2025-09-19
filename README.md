@@ -7,6 +7,8 @@ Decks are stored in the *decks* directory at the root of this project directory.
 
 After this is properly configured, these will then appear in the *deck menu* on the main page of the app. From here, the app will not continue unless a deck is selected and an error notification will appear if you try.
 
+I also have made it so that a cookie is stored locally to save which decks and options you were using on the last visit. This way you don't have to set them every time. I wanted to use this functionality to save missed questions as a new deck when you refresh but in the end I didn't have time or the reason to continue on that path.
+
 ### In The Deck Menu
 The deck menu will list the *grades* as drop down menus. Within each grade will be the *name* of each deck with a checkbox to use that deck. If your deck is not showing, please go back and make sure it is properly configured in the *includes/app.js* file.
 
@@ -19,7 +21,15 @@ At the top there are three checkboxes to customize the experience.
 
 From here, click the confirm button to load the decks and make the adjustments for the quiz. I added the *deck menu* so that it would give the app a few seconds to load in the vocabulary so that it seems seamless for the user.
 
-### In The Quiz <sup>coming soon</sup>
+### In The Quiz
+After starting the quiz you will be shown a prompt, the *question*, a textbox to answer with, a submit button, and a score. The score goes up if you get the answer correct. You only get two tries. After the first miss, it will tell you to try again and automatically move on if you're wrong. The score goes up by 1 point if you get it correct.
+
+### The Review Screen
+After all questions have been shown, all missed questions, even those missed the first time, will show at the end as a list. It will display *Question*:*Answer*. This give students a chance to see all they missed and make a note of it.
+
+Also on this page is the try again button which will bring you back to the home screen.
+
+Unfortunately, there isn't a way to only focus on those words. If I were to work on this more I would likely include that or a login system of some sort. Both of which were too much for this test case. 
 
 ### Background
 This is a small web app I made for my class to study vocab using typing instead of writing. It was difficult to find a site that was free and met my requirements.
